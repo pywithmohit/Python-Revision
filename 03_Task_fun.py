@@ -59,3 +59,22 @@ def calculate_slope(x1,x2,y1,y2):
 print(calculate_slope(1,2,3,9))
 
 
+# Declare a function named print_list.
+#  It takes a list as a parameter and it prints out each element of the list.
+
+def print_list(lst):
+    for item in lst:
+        print(item)
+
+my_lst = ["Apple","Banana","Grapes","Redbull"]
+print_list(my_lst)
+
+
+# Declare a function named reverse_list.
+#  It takes an array as a parameter and it returns the reverse of the array (use loops).
+
+def reverse_list(lst):
+  reversed_lst = []
+  for i in range(len(lst) - 1, -1, -1):
+    reversed_lst.append(lst[i])
+  return reversed_lst
