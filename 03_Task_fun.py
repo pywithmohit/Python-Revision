@@ -78,3 +78,44 @@ def reverse_list(lst):
   for i in range(len(lst) - 1, -1, -1):
     reversed_lst.append(lst[i])
   return reversed_lst
+
+# Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+
+def capitalize_list_items():
+    lst = ["apple","banana","grapes"]
+    return [item.capitalize() for item in lst]
+
+print(capitalize_list_items())
+
+# Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+
+# food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+# print(add_item(food_stuff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
+# numbers = [2, 3, 7, 9];
+# print(add_item(numbers, 5))      # [2, 3, 7, 9, 5]
+
+
+def add_item(food_list,new_item):
+    food_list.append(new_item)
+    return food_list
+my_food = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(my_food,'Meat'))
+
+def add_num(int_num,int_value):
+    int_num.append(int_value)
+    return int_num
+numbers = [2, 3, 7, 9]
+print(add_num(numbers,15))
+
+# Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+
+def remove_item(my_lst, item_to_remove):
+    new_list = []
+    for current_item in my_lst:
+        if current_item != item_to_remove:
+            new_list.append(current_item)
+
+    return new_list
+
+my_food = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(my_food, 'Mango'))
